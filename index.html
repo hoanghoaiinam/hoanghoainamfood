@@ -3,104 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ẩm Thực Việt - Landing Page</title>
+  <title>Hoàng Hoài Nam Food</title>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fffaf0;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at center, #111 0%, #000 100%);
+      color: #fff;
     }
+
     header {
-      background-color: #ff5722;
-      color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 2rem 1rem 1rem;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-shadow: 0 0 10px #ff6347;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    section.hero {
-      background-image: url('https://source.unsplash.com/featured/?vietnamese-food');
-      background-size: cover;
-      background-position: center;
-      height: 300px;
+
+    nav {
       display: flex;
-      align-items: center;
       justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      gap: 2rem;
+      margin-bottom: 2rem;
     }
-    section.hero h2 {
-      font-size: 2em;
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
     }
-    section.content {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
+
+    nav a:hover {
+      color: #ff6347;
     }
-    .dish {
-      margin-bottom: 40px;
+
+    .swiper {
+      width: 80%;
+      max-width: 800px;
+      height: 400px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(255, 99, 71, 0.3);
+      margin: 0 auto;
     }
-    .dish img {
+
+    .swiper-slide img {
       width: 100%;
-      border-radius: 10px;
-      max-height: 300px;
+      height: 100%;
       object-fit: cover;
+      border-radius: 20px;
     }
-    .dish h3 {
-      margin-top: 10px;
-      color: #d84315;
-    }
+
     footer {
-      background-color: #333;
-      color: white;
       text-align: center;
-      padding: 20px;
-    }
-    @media (min-width: 600px) {
-      .dish-container {
-        display: flex;
-        gap: 20px;
-      }
-      .dish-container .dish {
-        flex: 1;
-      }
+      padding: 2rem 1rem 1rem;
+      font-size: 1rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Ẩm Thực Việt</h1>
-    <p>Hương vị truyền thống - Gắn kết yêu thương</p>
-  </header>
 
-  <section class="hero">
-    <h2>Khám phá món ngon mỗi ngày</h2>
-  </section>
+  <header>Hoàng Hoài Nam Food</header>
 
-  <section class="content">
-    <div class="dish">
-      <img src="https://source.unsplash.com/featured/?pho" alt="Phở Bò">
-      <h3>Phở Bò Truyền Thống</h3>
-      <p>Phở bò là tinh hoa ẩm thực Việt với nước dùng thơm ngọt, bánh phở mềm và thịt bò tươi ngon.</p>
+  <nav>
+    <a href="#">Trang chủ</a>
+    <a href="#">Thực đơn</a>
+    <a href="#">Giới thiệu</a>
+    <a href="#">Liên hệ</a>
+  </nav>
+
+  <!-- Slider -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://picsum.photos/id/1015/800/400" alt="Món ăn 1" /></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/1016/800/400" alt="Món ăn 2" /></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/1018/800/400" alt="Món ăn 3" /></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/1020/800/400" alt="Món ăn 4" /></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/1021/800/400" alt="Món ăn 5" /></div>
     </div>
-    <div class="dish">
-      <img src="https://source.unsplash.com/featured/?spring-rolls" alt="Gỏi Cuốn">
-      <h3>Gỏi Cuốn Tươi Mát</h3>
-      <p>Món ăn nhẹ nhàng với rau xanh, tôm, bún và bánh tráng, chấm cùng nước mắm chua ngọt đậm đà.</p>
-    </div>
-    <div class="dish">
-      <img src="https://source.unsplash.com/featured/?banhmi" alt="Bánh Mì">
-      <h3>Bánh Mì Việt Nam</h3>
-      <p>Món ăn đường phố nổi tiếng với lớp vỏ giòn, nhân phong phú và hương vị tuyệt vời.</p>
-    </div>
-  </section>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Ẩm Thực Việt. All rights reserved.</p>
+    Địa chỉ: Hà Nội, Việt Nam
   </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+    });
+  </script>
 </body>
 </html>
