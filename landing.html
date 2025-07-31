@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ẩm Thực Việt - Landing Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffaf0;
+      color: #333;
+    }
+    header {
+      background-color: #ff5722;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    section.hero {
+      background-image: url('https://source.unsplash.com/featured/?vietnamese-food');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    section.hero h2 {
+      font-size: 2em;
+    }
+    section.content {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .dish {
+      margin-bottom: 40px;
+    }
+    .dish img {
+      width: 100%;
+      border-radius: 10px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    .dish h3 {
+      margin-top: 10px;
+      color: #d84315;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    @media (min-width: 600px) {
+      .dish-container {
+        display: flex;
+        gap: 20px;
+      }
+      .dish-container .dish {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ẩm Thực Việt</h1>
+    <p>Hương vị truyền thống - Gắn kết yêu thương</p>
+  </header>
+
+  <section class="hero">
+    <h2>Khám phá món ngon mỗi ngày</h2>
+  </section>
+
+  <section class="content">
+    <div class="dish">
+      <img src="https://source.unsplash.com/featured/?pho" alt="Phở Bò">
+      <h3>Phở Bò Truyền Thống</h3>
+      <p>Phở bò là tinh hoa ẩm thực Việt với nước dùng thơm ngọt, bánh phở mềm và thịt bò tươi ngon.</p>
+    </div>
+    <div class="dish">
+      <img src="https://source.unsplash.com/featured/?spring-rolls" alt="Gỏi Cuốn">
+      <h3>Gỏi Cuốn Tươi Mát</h3>
+      <p>Món ăn nhẹ nhàng với rau xanh, tôm, bún và bánh tráng, chấm cùng nước mắm chua ngọt đậm đà.</p>
+    </div>
+    <div class="dish">
+      <img src="https://source.unsplash.com/featured/?banhmi" alt="Bánh Mì">
+      <h3>Bánh Mì Việt Nam</h3>
+      <p>Món ăn đường phố nổi tiếng với lớp vỏ giòn, nhân phong phú và hương vị tuyệt vời.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ẩm Thực Việt. All rights reserved.</p>
+  </footer>
+</body>
+</html>
