@@ -397,12 +397,15 @@ header {
 }
 
 .app-download-links {
-  margin-top: 4rem;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .download-button {
-  width: 5rem;
-  margin-right: 30rem;
+    width: 5rem;
+    margin-right: 0;
 }
 
 .app-screenshots {
