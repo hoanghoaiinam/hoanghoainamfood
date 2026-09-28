@@ -391,7 +391,7 @@ header {
   grid-template-columns: 1fr 1fr;
   column-gap: 10rem;
   place-items: center;
-  justify-items: end;
+  justify-items: center;
   margin-top: 10rem;
   padding: 0 5rem;
 }
